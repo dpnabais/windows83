@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style">
+  
+</head>
+
+<body>
+
+<h1>electrosite</h1>
+
+<h2>retro vibes loaded</h2>
+
+<div id="mydiv1" class="window">
+  <div class="windowheader"><ico></ico></ico>Who am I?<exit onclick="closeWindow(this)">X</exit></div>
+  <div class="windowcontent">
+    <p>This is a paragraph about me, the author.</p>
+    <p>Since I want to stay annonymous, I'll just type some filler text.</p>
+    <p>For more information please contact the author, the webmaster, me or alternatively, myself.</p>
+  </div>
+</div>
+
+<div id="mydiv2" class="window">
+  <div class="windowheader"><ico></ico>Solar Fly<exit onclick="closeWindow(this)">X</exit></div>
+  <div class="windowcontent">
+    <link href="solarfly.html" rel="import" />
+  </div>
+</div>
+
+
+<div id="taskbar">
+  <button onclick="openStart()" class="startbtn"></button>
+  <div id="startmenu" class="startmenu-content">
+    <div id="menuLogo"></div>
+    <div id="menuitemcontainer">
+      <button class="menuitem" onclick="openmydiv1()" id="menuabout"> About...</button>
+      <button class="menuitem" onclick="openmydiv2()" id="menuproject1">Solar Fly</button>
+      <button>DIV 3</button>
+    </div>
+  </div>
+  <div id="timetxt"></div>
+</div> 
+
+
+<script src="script"></script>
+</body>
+</html>

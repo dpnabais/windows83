@@ -1,0 +1,186 @@
+/*COLORS*/
+
+:root {
+  --green: #7FD4C1;
+  --aqua: #30BFDD;
+  --purple: #8690FF;
+  --baby: #ACD0F4;
+  --orange: #F7C0BB;
+  --pink: #FBCFF3;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--pink);
+  font-family: sans-serif;
+  /*background-image: url('./img/stone.jpg');
+  background-repeat: repeat;*/
+}
+
+.window {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: left;
+  border: 2px solid;
+  border-color: white darkgray darkgray white;
+}
+
+.windowheader {
+  padding: 0 1px 0 10px;
+  display: flex;
+  align-items: center;
+  cursor: move;
+  z-index: 10;
+  background-color: var(--orange);
+  color: var(--purple);
+  height: 30px;
+  text-transform: full-width;
+  font-weight: bold;
+  border-bottom: 2px solid darkgray;
+}
+
+.windowcontent {
+  padding: 10px;
+}
+
+.windowheader ico{
+  width: 40px;
+  height: 100%;
+}
+
+#mydiv1 .windowheader ico{
+  background: url('./img/about.png');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#mydiv2 .windowheader ico{
+  background: url('./img/monitor.png');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* Dropdown Button */
+.startbtn {
+  border: none;
+  cursor: pointer;
+  background-image: url('./img/start_up.jpg');
+  background-size: contain;
+  width: 100px;
+  height: 41px;
+  margin: 2px;
+}
+
+#timetxt {
+  margin: 2px 2px 2px auto;
+  border-top: 2px solid darkgray;
+  border-right: 2px solid darkgray;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  height: 100%;
+  line-height: 38px;
+  padding: 0px 10px;  
+}
+
+exit{
+  margin: 0 0 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: var(--green);
+  width: 30px;
+  border: 2px solid;
+  border-color: white darkgray darkgray white;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: var(--orange);
+}
+
+/* The container <div> - needed to position the dropdown content */
+#taskbar {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  border-top: 2px solid white;
+}
+
+.startmenu-content {
+  display: none;
+  position: absolute;
+  padding-left: 30px;
+  bottom: 41px;
+  left: 3px;
+  background-color: lightgray;
+  min-width: 160px;
+  min-height: 190px;
+  border-top: 2px solid white;
+  border-right: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
+  border-left:2px solid white;
+  z-index: 1;
+  flex-direction: column-reverse;
+}
+
+.startmenu-content button {
+  color: black;
+  padding: 12px 40px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+#menuitemcontainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+#menuLogo {
+  width: 30px;
+  height: 100%;
+  left: 0px;
+  background-color: pink;
+  position:absolute;
+  background-image: url('./img/start_bar.jpg');
+  background-size: cover;
+  background-position-y: bottom;
+
+}
+
+#menuabout {
+  background-image: url('./img/about.png');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#menuproject1 {
+  background-image: url('./img/monitor.png');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+/* Change color of dropdown links on hover */
+.startmenu-content button:hover {background-color: var(--orange);}
+
+.show {display:flex;} 
+
+
+
+h1{
+  color: var(--purple);
+  text-decoration-style: wavy;
+  text-decoration-thickness: 3px;
+  text-decoration-line: underline;
+  
+}
+
+h2{
+  color: var(--baby);
+}
