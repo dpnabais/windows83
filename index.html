@@ -3,14 +3,14 @@
 
 <head>
 	<link rel="stylesheet" href="style">
-  
 </head>
 
 <body>
+<div id="welcomemsg">
+  <h1>electrosite</h1>
 
-<h1>electrosite</h1>
-
-<h2>retro vibes loaded</h2>
+  <h2>retro vibes loaded</h2>
+</div>
 
 <div id="mydiv1" class="window">
   <div class="windowheader"><ico></ico></ico>Who am I?<exit onclick="closeWindow(this)">X</exit></div>
@@ -21,12 +21,30 @@
   </div>
 </div>
 
+<!-- solar fly -->
 <div id="mydiv2" class="window">
   <div class="windowheader"><ico></ico>Solar Fly<exit onclick="closeWindow(this)">X</exit></div>
   <div class="windowcontent">
-    <link href="solarfly.html" rel="import" />
+    <h2>Solar Fly</h2>
+    <img src="./fly/sketch01.jpg">
+    <p>Combine a two transistor astable oscilator with solar panels and a joule thief for a cyber fly that blinks when the sun shines.</p>
+    <hr>
+    <img src="./fly/oscillator.png">
+    <p>Astable oscillator with only 2 NPN transistors, 2 capacitors and 4 resistors. Just steal it from the internet.</p>
+    <hr>
+    <img src="./fly/fullcircuit.jpg">
+    <p>Finding a joule thief to boost the voltage of the solar panels enough to light up the LEDs is easy too. Great example on <a href="http://www.bigclive.com/joule.htm">bigclive.com</a>. Slap it to the oscillator circuit to get this. On the far left are the solar panels feeding the joule thief. Not sure if that's the right symbol.</p>
+    <hr>
+    <img src="./fly/plan.jpg">
+    <p>Next was planning the layout to make it look like a bug. Again, those aren't LEDs, they're the solar panels.</p>
+    <hr>
+    <img src="./fly/pic1.jpg">
+    <p>The ferrite torus was scavenged from some broken electronics and the wire is from a CAT5 ethernet cable. The resistors are &#8539;W.</p>
+    <img src="./fly/pic2.jpg">
+    <p>The solar panels are rated for 0.5V. Two output a max of 1V under full sun, usualy less than that. The joule thief boosts it enough to light up the LEDs.</p>
   </div>
 </div>
+
 
 
 <div id="taskbar">
