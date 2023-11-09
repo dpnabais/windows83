@@ -74,6 +74,7 @@ window.onclick = function(event) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
+        document.getElementById("startbtn").classList.remove("startbtndn");
       }
     }
   }
@@ -86,10 +87,12 @@ function openStart() {
 
 function openmydiv1() {
   document.getElementById("mydiv1").classList.toggle("show");
+  //document.getElementById("mydiv1").parentNode.appendChild(getElementById("mydiv1"));
 }
 
 function openmydiv2() {
   document.getElementById("mydiv2").classList.toggle("show");
+  //document.getElementById("mydiv2").parentNode.appendChild(getElementById("mydiv2"));
 }
 
 function closeWindow(win){

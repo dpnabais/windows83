@@ -17,6 +17,8 @@ body{
   font-family: sans-serif;
   /*background-image: url('./img/stone.jpg');
   background-repeat: repeat;*/
+  display: grid;
+  overflow: hidden;
 }
 
 .window {
@@ -30,6 +32,9 @@ body{
   border-color: white darkgray darkgray white;
   width: 80%;
   max-height: 80%;
+  justify-self: center;
+  top: 50%;
+  translate: 0 -50%;
 }
 
 .windowheader {
