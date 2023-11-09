@@ -30,6 +30,7 @@ function dragElement(elmnt) {
   }
 
   function dragMouseDown(e) {
+    this.parentNode.appendChild(this);
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
