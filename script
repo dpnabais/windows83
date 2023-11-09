@@ -65,10 +65,6 @@ function dragElement(elmnt) {
   }
 }
 
-
-
-
-
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.startbtn')) {
@@ -85,6 +81,7 @@ window.onclick = function(event) {
 
 function openStart() {
   document.getElementById("startmenu").classList.toggle("show");
+  document.getElementById("startbtn").classList.toggle("startbtndn");
 }
 
 function openmydiv1() {

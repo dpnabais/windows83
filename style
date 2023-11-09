@@ -87,6 +87,10 @@ body{
   margin: 2px;
 }
 
+.startbtndn{
+  background-image: url('./img/start_dn.jpg');
+}
+
 #timetxt {
   margin: 2px 2px 2px auto;
   border-top: 2px solid darkgray;
