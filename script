@@ -31,6 +31,8 @@ function dragElement(elmnt) {
 
   function dragMouseDown(e) {
     this.parentNode.appendChild(this);
+    //document.write(((window.innerWidth) - (elmnt.offsetTop - pos1) - elmnt.offsetWidth));
+    //((window.innerWidth) - (elmnt.offsetTop - pos1) + elmnt.offsetWidth)
     e = e || window.event;
     e.preventDefault();
     // get the mouse cursor position at startup:
@@ -50,8 +52,10 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";        
+    
   }
 
   function closeDragElement() {
